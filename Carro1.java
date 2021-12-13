@@ -1,3 +1,4 @@
+
 package br.com.prog3.semanapratica2.domain;
 
 import java.io.Serializable;
@@ -18,6 +19,7 @@ public class Carro implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	// private String placa;
 	private Integer placa;
+	private String placaCarro;
 	private String cor;
 	private Integer ano;
 	private Integer anoModelo;
@@ -32,9 +34,23 @@ public class Carro implements Serializable {
 	}
 	// get/set
 
+	
+	
 	public String getCor() {
 		return cor;
 	}
+
+	public String getPlacaCarro() {
+		return placaCarro;
+	}
+
+
+
+	public void setPlacaCarro(String placaCarro) {
+		this.placaCarro = placaCarro;
+	}
+
+
 
 	public Integer getPlaca() {
 		return placa;
