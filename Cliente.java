@@ -25,8 +25,17 @@ public class Cliente implements Serializable{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	
-	//TODO ELE APRESENTA ERRO QUANDO O ID E UMA STRING . PORTANTO VOU MUDA O CPF DE STRING PAR
+	
 	private String cpf;
+	private String cpfReal;
+	public String getCpfReal() {
+		return cpfReal;
+	}
+
+	public void setCpfReal(String cpfReal) {
+		this.cpfReal = cpfReal;
+	}
+
 	private String nome;
 	private LocalDate dataNascimento;
 	
@@ -89,3 +98,4 @@ public class Cliente implements Serializable{
 	}
 
 }
+
