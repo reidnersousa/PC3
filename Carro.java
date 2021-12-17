@@ -1,11 +1,16 @@
 package br.com.prog3.semanapratica2.domain;
 
 import java.io.Serializable;
+import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Carro implements Serializable {
@@ -24,10 +29,38 @@ public class Carro implements Serializable {
 	private Integer anoModelo;
 	private String marca;
 	private String modelo;
-	// private Cliente cliente;
-	// private Oficina oficina;
+	
+	/*
+	@ManyToOne
+	@JoinColumn(name="id_cliente",nullable=true,updatable=true)
+	private Cliente cliente;
+	
+	public Cliente getCliente() {
+		return cliente;
+	}
 
-	// private Modalidade modalidade;
+
+
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
+*/
+	@ManyToOne
+	@JoinColumn(name = "id_oficina", nullable = true, updatable = true)
+	private Oficina oficina;
+	
+
+	public Oficina getOficina() {
+		return oficina;
+	}
+
+
+
+	public void setOficina(Oficina oficina) {
+		this.oficina = oficina;
+	}
+
+
 
 	public Carro() {
 	}
