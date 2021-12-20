@@ -88,8 +88,21 @@ public class Oficina implements Serializable{
 	}
 
 
-
-	public Oficina() {
+	/*
+	public Oficina(Integer codigo ,String  endereco , String especilidade , String nome,List<Carro> carros) {
+		this.codigo=codigo;
+		this.endereco=endereco;
+		this.especilidade=especilidade;
+		this.nome=nome;
+		this.carros=carros;
+		
+	}
+	*/
+	
+	public Oficina( ) {
+		//this.codigo=codigo;
+		
 		
 	}
 }
+
