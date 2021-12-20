@@ -1,3 +1,5 @@
+
+	
 package br.com.prog3.semanapratica2.domain;
 
 import java.io.Serializable;
@@ -30,6 +32,7 @@ public class Carro implements Serializable {
 	private String marca;
 	private String modelo;
 	
+	//TODO
 	/*
 	@ManyToOne
 	@JoinColumn(name="id_cliente",nullable=true,updatable=true)
@@ -39,12 +42,13 @@ public class Carro implements Serializable {
 		return cliente;
 	}
 
-
-
 	public void setCliente(Cliente cliente) {
 		this.cliente = cliente;
 	}
+
 */
+	//TODO
+	
 	@ManyToOne
 	@JoinColumn(name = "id_oficina", nullable = true, updatable = true)
 	private Oficina oficina;
