@@ -43,10 +43,7 @@ public class Cliente implements Serializable{
 	@OneToMany(cascade = CascadeType.ALL)
 	@JoinColumn(name="id_cliente")
 	private List<Carro> carros;
-
-	
-	
-	
+		
 	public List<Carro> getCarros() {
 		return carros;
 	}
@@ -95,7 +92,9 @@ public class Cliente implements Serializable{
 	
 	public Cliente(){
 		
+		
 	}
 
 }
+
 
