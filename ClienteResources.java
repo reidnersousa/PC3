@@ -56,6 +56,7 @@ public class ClienteResource {
 			record.setCpf(cliente.getCpf());
 			record.setNome(cliente.getNome());
 			record.setDataNascimento(cliente.getDataNascimento());
+			record.setCpfReal(cliente.getCpf());
 			//record.setCarros(cliente.getCarros());
 			
 			
